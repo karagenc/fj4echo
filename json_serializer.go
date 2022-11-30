@@ -14,6 +14,10 @@ func New() echo.JSONSerializer {
 	return new(goJSONSerializer)
 }
 
+func Type() SerializerType {
+	return SerializerTypeGoJSON
+}
+
 // goJSONSerializer implements JSON encoding using github.com/goccy/go-json.
 type goJSONSerializer struct{}
 

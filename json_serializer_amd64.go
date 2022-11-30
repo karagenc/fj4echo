@@ -13,6 +13,10 @@ func New() echo.JSONSerializer {
 	return new(sonicJSONSerializer)
 }
 
+func Type() SerializerType {
+	return SerializerTypeSonic
+}
+
 // sonicJSONSerializer implements JSON encoding using github.com/bytedance/sonic.
 type sonicJSONSerializer struct{}
 
