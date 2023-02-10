@@ -1,3 +1,5 @@
+//go:build amd64 && (linux || windows || darwin)
+
 package fj4echo
 
 import (
