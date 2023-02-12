@@ -1,4 +1,4 @@
-//go:build !amd64 || (amd4 && !(linux || windows || darwin))
+//go:build !amd64 || (amd64 && !(linux || windows || darwin))
 
 package fj4echo
 
