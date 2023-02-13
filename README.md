@@ -2,7 +2,9 @@
 
 By default, [Echo](https://github.com/labstack/echo) uses Go's stdlib `encoding/json`, which have more performant alternatives such as [jsoniter](https://github.com/json-iterator/go), [go-json](https://github.com/goccy/go-json), and [sonic](https://github.com/bytedance/sonic). In almost all of the cases `encoding/json` is sufficient, and I never needed a faster JSON encoding for my backend. But while playing with Echo, I discovered that it has support for custom JSON serialization (`JSONSerializer` interface), and the idea of combining sonic and go-json seemed gorgeous to me, so I created this package.
 
-fj4echo conditionally selects the JSON library. If processor is amd64, it uses sonic, otherwise it uses go-json.
+Selection of JSON library is platform dependent. If the platform supports sonic (at the time of writing sonic supports AMD64 and Linux, macOS, & Windows), then sonic is used, otherwise go-json is used.
+
+Also note that go-json's version is `0.10.0` at the time of writing. Please consider your backend's stability before using it.
 
 ## Usage
 
