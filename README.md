@@ -8,12 +8,12 @@ Also note that go-json's version is `0.10.0` at the time of writing. Please cons
 
 ## Usage
 
-`go get -u github.com/tomruk/fj4echo`
+`go get -u github.com/karagenc/fj4echo`
 
 ```go
 import (
     "fmt"
-    "github.com/tomruk/fj4echo"
+    "github.com/karagenc/fj4echo"
     "github.com/labstack/echo/v4"
 )
 
@@ -58,7 +58,7 @@ To use a custom configuration, use `NewWithConfig` function:
 ```go
 import (
     "fmt"
-    "github.com/tomruk/fj4echo"
+    "github.com/karagenc/fj4echo"
     "github.com/labstack/echo/v4"
 )
 

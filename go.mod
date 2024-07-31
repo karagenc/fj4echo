@@ -1,4 +1,4 @@
-module github.com/tomruk/fj4echo
+module github.com/karagenc/fj4echo
 
 go 1.17
 
